@@ -945,6 +945,28 @@ section {
 }
 
 /*--------------------------------------------------------------
+# Clients
+--------------------------------------------------------------*/
+.clients {
+  padding: 15px 0;
+  text-align: center;
+}
+.clients img {
+  max-width: 45%;
+  transition: all 0.4s ease-in-out;
+  display: inline-block;
+  padding: 15px 0;
+}
+.clients img:hover {
+  transform: scale(1.15);
+}
+@media (max-width: 768px) {
+  .clients img {
+    max-width: 40%;
+  }
+}
+
+/*--------------------------------------------------------------
 # Our Skills
 --------------------------------------------------------------*/
 .skills .progress {
@@ -1475,7 +1497,7 @@ section {
 }
 #footer .footer-top .footer-links ul {
   list-style: none;
-  padding: 0;
+  padding: 20;
   margin: 0;
 }
 #footer .footer-top .footer-links ul i {
@@ -1485,7 +1507,7 @@ section {
   line-height: 1;
 }
 #footer .footer-top .footer-links ul li {
-  padding: 10px 0;
+  padding: 2px 1px;
   display: flex;
   align-items: center;
 }
@@ -1512,6 +1534,7 @@ section {
   color: #fff;
   position: relative;
   padding-bottom: 12px;
+  padding: 20;
 }
 #footer .footer-newsletter form {
   margin-top: 30px;
