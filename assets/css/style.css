@@ -126,6 +126,8 @@ h6 {
 
 }
 
+
+
 /*--------------------------------------------------------------
 # Header Social Links
 --------------------------------------------------------------*/
@@ -465,6 +467,14 @@ h6 {
   -webkit-animation-delay: 0.8s;
   animation-delay: 0.8s;
   border: 2px solid #e6b012;
+}
+#hero{
+  height: 100vh;
+}
+
+.carousel-item{
+  background-size: cover;
+  background-position: 100% 100%;
 }
 
 #hero .btn-get-started:hover {
