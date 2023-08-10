@@ -126,6 +126,8 @@ h6 {
 
 }
 
+
+
 /*--------------------------------------------------------------
 # Header Social Links
 --------------------------------------------------------------*/
@@ -466,6 +468,14 @@ h6 {
   animation-delay: 0.8s;
   border: 2px solid #e6b012;
 }
+#hero{
+  height: 100vh;
+}
+
+.carousel-item{
+  background-size: cover;
+  background-position: 100% 100%;
+}
 
 #hero .btn-get-started:hover {
   background: #e6b012;
@@ -677,10 +687,9 @@ h6 {
       display: none;
     }
   }
-
-
-
 }
+
+
 
 @media (max-width: 992px) {
   #hero .carousel-container {
@@ -698,9 +707,9 @@ h6 {
 }
 
 @media (max-height: 500px) {
-  #hero {
+ /* #hero {
     height: 120vh;
-  }
+  }*/
 }
 
 
@@ -2606,4 +2615,18 @@ hea h2 {
 #declineBtn:hover {
   background-color: #4070f4;
   color: #fff;
+}
+
+@media (max-width: 1200px) {
+  #hero{
+    height: 60vh;
+    
+  }
+  
+  .carousel-container{
+    margin-top: 350px;
+  }
+  .carousel-content{
+    margin-top: 250px;
+  }
 }
