@@ -27,8 +27,8 @@
       hour = minute * 60,
       day = hour * 24;
 
-	let countDown = new Date('Sep 01, 2023 11:00:00').getTime(),
-    x = setInterval(function() {    
+	let countDown = new Date('Sep 01, 2023 11:00:00').getTime();
+    var countdownfunction = setInterval(function() {    
 
       let now = new Date().getTime(),
           distance = countDown - now;
@@ -41,11 +41,19 @@
 
      //do something later when date is reached
       if (distance < 0) {
-       clearInterval(x);
+		
+
+
+	   document.getElementById("daysss").innerHTML = "Registration is Closed";
+	   document.getElementById("dayssss").innerHTML = "Hey! The Hackathon has Started";
+	   document.getElementById("cleard").innerHTML = "";
+	   document.getElementById("clearh").innerHTML = "";
+	   document.getElementById("clearm").innerHTML = "";
+	   document.getElementById("clears").innerHTML = "";
       
       }
 
-    }, second)
+    }, 1000)
 
 	$(function() {
         $("#tabs").tabs();
