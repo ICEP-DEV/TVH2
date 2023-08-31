@@ -46,9 +46,62 @@
   * Author: BootstrapMade.com
   * License: https://bootstrapmade.com/license/
   ======================================================== -->
+
+
+  <style>
+body, html {
+  height: 100%;
+  margin: 0;
+}
+
+.bgimg {
+  padding-top: 10px;
+  height: 70%;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  color: rgb(187, 48, 48);
+  font-family: "Open Sans", sans-serif;
+  font-size: 25px;
+}
+
+.topleft {
+  position: absolute;
+  top: 0;
+  left: 16px;
+}
+
+.bottomleft {
+  position: absolute;
+  bottom: 0;
+  left: 16px;
+}
+
+.middle {
+  color: goldenrod;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  
+  
+}
+
+hr {
+  color: goldenrod;
+  margin: auto;
+  width: 80%;
+  
+  
+}
+</style>
 </head>
 
-<body>
+<body >
+
+  
+
   <!-- ======= Header ======= -->
   <header id="header" class="fixed-top">
     <div class="container d-flex align-items-center">
@@ -65,13 +118,42 @@
           <li><a href="team.html">Prizes</a></li>
           <li><a href="blog.html">Team</a></li>
           <li><a href="challenge.html">Challenges</a></li>
+          <li><a href="programme.html">programme</a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav>
       <!-- .navbar -->
     </div>
+<!-- ***** Pre HEader ***** -->
+<div class="pre-header">
+    <div class="container" style="align-items: center;">
+        <div class="row">
+            <div class="col-12">
+                <span span id="dayssss">Hey! The Hackathon is Starting in <span id="dayss"> </span> Days.</span>    <label style="cursor: pointer; font-size: 18; color:green;padding-left: 30px;font-weight: 500;" onclick="togglePopup()"><spa id="daysss">Register Now!</spa> </label>
+            </div>
+            
+        </div>
+    </div>
+</div>
+
+<!-- ***** Main Banner Area Start ***** -->
+<div class="main-banner">
+    <div class="counter-content">
+        <ul>
+            <li id="cleard">Days<span  id="days"  ></span></li>
+            <li id="clearh">Hours<span id="hours"></span></li>
+            <li id="clearm">Minutes<span id="minutes"></span></li>
+            <li id="clears">Seconds<span id="seconds"></span></li>
+        </ul>
+    </div>
+   
+</div>
+<!-- ***** Main Banner Area End ***** -->
+
+
   </header>
   <!-- End Header -->
+  
 
   <!-- ======= Hero Section ======= -->
   <section id="hero" style=background:white>
@@ -80,13 +162,25 @@
         <!-- Slide 1 -->
 
         <div class="carousel-item active" style="background-image: url(assets/img/slide/PTA4.jpg);">
-
+      
+   <!-- <div class="bgimg">
+      
+      <div class="middle">
+        <h1 >Launching in:</h1>
+        <hr>
+        
+        <p id="demo" style="font-size:28px; color: red;font-weight: 600;"></p>
+      </div>
+      
+    </div>-->
+    
           <div class="carousel-container">
             <div class="carousel-content animate__animated animate__fadeInUp">
               <h2>Tshwane Varsity Hackathon</h2>
-            
+              
+              
               <p>
-                To be part of the TVH event, Click on the button below to register as Hacker.
+                To be part of the TVH event, Click on the button below to register as a hacker.
               </p>
               <div class="text-center">
                 <button class="btn-get-started" onclick="togglePopup()">Register Here</button>
@@ -97,7 +191,20 @@
 
         <!-- Slide 2 -->
         <div class="carousel-item" style="background-image: url(assets/img/slide/tvh1.jpeg);">
+        <!--  <div class="bgimg">
+      
+            <div class="middle">
+              <h1>Launching in:</h1>
+              <hr>
+              <p id="demo2" style="font-size:28px; color: red;font-weight: 600;"></p>
+            </div>
+            
+          </div>-->
+          
+          
           <div class="carousel-container">
+
+            
             <div class="carousel-content animate__animated animate__fadeInUp">
               <h2>Tshwane Varsity Hackathon</h2>
               <p>
@@ -122,6 +229,15 @@
 
         <!-- Slide 3 -->
         <div class="carousel-item" style="background-image: url(assets/img/slide/PTA8.jpg);">
+         <!-- <div class="bgimg">
+      
+            <div class="middle">
+              <h1>Launching in:</h1>
+              <hr>
+              <p id="demo3" style="font-size:28px; color: red;font-weight: 600;"></p>
+            </div>-->
+            
+          
           <div class="carousel-container">
             <div class="carousel-content animate__animated animate__fadeInUp">
               <h2>Accelerating your 4IR career</h2>
@@ -191,7 +307,7 @@
               <p>Your contact information will be shared with team members. You can only be a member of one team.</p>
 
               <h2>Judging</h2>
-              <p>The Hackathon competition judges will choose all winners. All submissions must be completed by the
+              <p>The hackathon competition judges will choose all winners. All submissions must be completed by the
                 required time. No requests for extensions will be considered. To be eligible for prizes, submission of
                 content must use the Email provided.
                 Judges are not eligible to compete for prizes. All Hackathon entries will be judged by the Hackathon
@@ -360,21 +476,19 @@
     <!-- End Terms/Rules section -->
 
 
-    <!-- ======= Menu Section ======= -->
-    <section id="menu" class="menu">
+
+    <section id="menu" class="menu" >
       <div class="container" data-aos="fade-up">
         <div class="tab-content" data-aos="fade-up" data-aos-delay="300">
 
           <div class="tab-pane fade active show" id="menu-starters">
-
-            <div class="tab-header text-center">
-
-              <h3>Announcements</h3>
+            <div class="section-title" data-aos="fade-up">
+              <h2>Announcements</h2>
             </div>
 
             <div class="row gy-5">
               <div class="col-lg-4 menu-item">
-                <a href="assets/img/poster.jpg" class="glightbox"><img src="assets/img/poster.png"
+                <a href="assets/img/poster.png" class="glightbox"><img src="assets/img/poster.png"
                     class="menu-img img-fluid" alt=""></a>
 
                 <p class="ingredients">
@@ -384,7 +498,7 @@
 
                 </p>
                 <p class="price">
-                  <a href="assets/img/poster.jpg" class="glightbox">View Post</a><br><br>
+                  <a href="assets/img/poster.png" class="glightbox">View Post</a><br><br>
                 </p>
                 <p class="price">
                 </p>
@@ -409,7 +523,7 @@
         <div class="row content">
           <div class="col-lg-6" data-aos="fade-right">
             <h1>What The Hack?</h1>
-            <p>TVH is an annual hacking competition that was introduced in 2018 by its Chief Organizer Mr Mash Phurutsi.
+            <p style="color: black;">TVH is an annual hacking competition that was introduced in 2018 by it's Chief Organizer Mr Mash Phurutsi.
               TVH is a Tshwane University of Technology hackathon competition organized by the Faculty of ICT &
               Directorate of Research & Innovation in partnership with the industry in support of, the National
               Development Plan (Vision 2030) of the Government of the Republic of South Africa by addressing Chapter 9
@@ -424,16 +538,16 @@
           </div>
           <div class="col-lg-6 pt-4 pt-lg-0" data-aos="fade-left">
             <h1>How the Hack</h1>
-            <p>Partners from the industry, municipality (City of Tshwane), and Universities will be requested to present
+            <p style="color: black;">Partners from the industry, municipality (City of Tshwane), and Universities will be requested to present
               challenges that are currently faced by global citizens. Applicants will then be required to come up with
               innovative solutions to solve these problems.</p>
-            <p>
+            <p style="color: black;">
               Groups consisting of 7-10 participants will be formed by the members of the organizing team. In each
               group, there has to be a student hacker with the following background/knowledge:
             </p>
 
-            <p>
-            <ul>
+            <p >
+            <ul style="color: black;">
               <li>Programmers and Engineers</li>
               <li>Marketing and entrepreneurship </li>
               <li>Design (UI/UX) </li>
@@ -443,7 +557,7 @@
             </ul>
             </p>
 
-            <p>
+            <p style="color: black;">
               ICT and engineering hackers will demonstrate their skills in software development, cloud computing, agile
               practices to develop digital solutions that can solve presented challenges.<br><br>
               Applicants will only be given 53 hours to do all of this. This competition, therefore, assists with the
@@ -453,13 +567,9 @@
           </div>
         </div>
 
-      </div>
-    </section>
-    <!-- End About Us Section -->
 
-    <!-- ======= Services Section ======= -->
-    <!-- ======= Why Us Section ======= -->
-    <section id="why-us">
+         <!-- ======= Why Us Section ======= -->
+    <section id="why-us" >
       <div class="container" data-aos="fade-up">
 
         <div class="row row-eq-height justify-content-center">
@@ -469,8 +579,8 @@
               <i class="bi bi-people"></i>
               <div class="card-body">
                 <h5 class="card-title">Organising Team</h5>
-                <p class="card-text">The individuals involved in the organising and excution of the Tswane Varsity
-                  Hackathon.Consisting of the Lead Organising Team industry Volunteers and the Organising Team.</p>
+                <p class="card-text">The individuals involved in the organising and excution of the tshwane varsity
+                  hackathon.Consisting of the lead organising team industry volunteers and the organising team.</p>
 
               </div>
             </div>
@@ -481,7 +591,7 @@
               <i class="bi bi-card-checklist"></i>
               <div class="card-body">
                 <h5 class="card-title">Free Entry</h5>
-                <p class="card-text">The Tshwane Varsity hackathon is open to all students and other respective
+                <p class="card-text">The tshwane varsity hackathon is open to all students and other respective
                   universities no entry/ registration fee.</p>
 
               </div>
@@ -503,6 +613,13 @@
 
       </div>
     </section><!-- End Why Us Section -->
+
+      </div>
+    </section>
+    <!-- End About Us Section -->
+
+    <!-- ======= Services Section ======= -->
+   
 
     <!-- <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="200">
             <div class="icon-box iconbox-red">
@@ -637,12 +754,20 @@
           </div>
 
 
-
-
-
-
           <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
             <a href="https://nelekat.co.za/site/"><img src="assets/img/clients/nele.png" alt="" class="img-fluid"></a>
+          </div>
+
+           <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+            <a href="https://www.agilealliance.org/"><img src="assets/img/clients/AA.jpg" alt="" class="img-fluid"></a>
+          </div>
+
+            <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+            <a href="https://www.wedochange.io/"><img src="assets/img/clients/wdc.svg" alt="" class="img-fluid"></a>
+          </div>
+
+           <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+            <a href="https://www.nkgwete.co.za/"><img src="assets/img/clients/NKGWETE.PNG" alt="" class="img-fluid"></a>
           </div>
 
 
@@ -692,6 +817,28 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
+  <script src="assets/js/table.js"></script>
+
+
+ <!-- jQuery -->
+ <script src="assets/js/jquery-2.1.0.min.js"></script>
+
+ <!-- Bootstrap -->
+ <script src="assets/js/popper.js"></script>
+ <script src="assets/js/bootstrap.min.js"></script>
+
+ <!-- Plugins -->
+ <script src="assets/js/scrollreveal.min.js"></script>
+ <script src="assets/js/waypoints.min.js"></script>
+ <script src="assets/js/jquery.counterup.min.js"></script>
+ <script src="assets/js/imgfix.min.js"></script> 
+ <script src="assets/js/mixitup.js"></script> 
+ <script src="assets/js/accordions.js"></script>
+ <script src="assets/js/owl-carousel.js"></script>
+ 
+ <!-- Global Init -->
+ <script src="assets/js/custom.js"></script>
+
 </body>
 
 </html>
