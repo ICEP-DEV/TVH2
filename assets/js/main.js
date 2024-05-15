@@ -9,6 +9,10 @@ function challenge(){
   window.open("https://docs.google.com/forms/d/e/1FAIpQLSfCQV3cfq2-SOt-jIk4lkpxez7PmSaw2qd6huolLl38FhNcKQ/viewform?usp=sf_link")
 }
 
+function register(){
+  window.open("https://forms.gle/rve3voyLLLcRK6UT8")
+}
+
 (function() {
   "use strict";
 
